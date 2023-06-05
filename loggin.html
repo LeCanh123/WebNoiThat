@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Signin Form Template Example</title>
+  <link rel="stylesheet" href="./loggin/style.css">
+  
+
+
+</head>
+<body >
+  <div id="snackbar">Some text some message..</div>
+<!-- partial:index.partial.html -->
+<html lang="vi">
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link rel="stylesheet" href="./index.css">
+
+  </head>
+
+<body>
+ 
+<div id="form" style="position: relative;top:-60px">
+  <div class="container">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
+      <div id="userform">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          
+          <li class="active" id="dangKi1"><a href="#signup" role="tab" data-toggle="tab" id="thunghiem1" onclick="thu()">Sign up</a></li><!--Nút chuyển  -->
+          <li      id="dangNhap1"><a href="#login"  role="tab" data-toggle="tab" id="thunghiem2" onclick="thu()">Log in</a></li>
+
+          
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active in" id="signup">
+            <h2 class="text-uppercase text-center"> Sign Up for Free</h2>
+            <form id="signup" >
+              <div class="row">
+                
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label>First Name<span class="req">*</span> </label>
+                    <input type="text" class="form-control" id="first_name" required data-validation-required-message="Please enter your name." autocomplete="off">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label> Last Name<span class="req">*</span> </label>
+                    <input type="text" class="form-control" id="last_name" required data-validation-required-message="Please enter your name." autocomplete="off">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label> Your Email<span class="11">*</span> </label>
+                <input type="text" class="form-control" id="email"  autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label> Your Phone<span class="req">*</span> </label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label> Password<span class="req">*</span> </label>
+                <input type="password" class="form-control" id="password" required data-validation-required-message="Please enter your password" autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="mrgn-30-top">
+                <div  class="btn btn-larger btn-block" id="gui" onclick="signUp()">
+                Sign up
+                </div>
+              </div>
+
+
+              <!-- đăng nhập login -->
+            </form>
+          </div>
+          <div class="tab-pane fade in" id="login">
+            <h2 class="text-uppercase text-center"> Log in</h2> <!--Nút chuyển  -->
+            <form id="login">
+              <div class="form-group">
+                <label> Your Email<span class="req">*</span> </label>
+                <input type="email" class="form-control" id="email1" required data-validation-required-message="Please enter your email address." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label> Password<span class="req">*</span> </label>
+                <input type="password" class="form-control" id="password1" required data-validation-required-message="Please enter your password" autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="mrgn-30-top">
+                <button type="button" class="btn btn-larger btn-block" id="loggin" onclick="logIn()">
+                Log in
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="./jquery-3.7.0.min.js"></script>
+<script src="./bootstrap.min.js"></script>
+<script  src="./loggin/script.js"></script>
+
+</body>
+</html>
